@@ -26,7 +26,7 @@ export default function Footer() {
       <div className={styles["footer-box-content-2"]}>
         <div className={styles["box-content"]}>
           <div style={{ height: "70px", width: "404px" }}>
-            <Image src={"/chat-group.svg"} height={70} width={70} />
+            <Image src={"/chat-group.svg"} height={70} width={70} alt=""/>
             <p>Consultation gratuite</p>
           </div>
         </div>

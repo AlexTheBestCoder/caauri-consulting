@@ -561,7 +561,7 @@ export default function Home() {
       <div className={styles["box-container-3"]}>
         <h1>Débloquez votre prochaine étape de croissance avec Caauri !</h1>
         <p>
-          Nous utilisons la stratégie, la créativité et l'ingénierie pour
+          Nous utilisons la stratégie, la créativité et l&apos;ingénierie pour
           fournir des résultats mesurables et à fort impact pour votre
           entreprise. Explorez le marketing de niveau supérieur avec un pionnier
           du marketing numérique qui garantit un rendement maximal des
