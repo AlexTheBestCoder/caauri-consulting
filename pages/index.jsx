@@ -7,7 +7,6 @@ import LogoYcombinator from "@/components/LogoYcombinator";
 import Footer from "@/components/Footer";
 
 export default function Home() {
-
   const applyAnimationLoop = useCallback(() => {
     const svgElements = document.querySelectorAll("svg");
 
@@ -42,7 +41,7 @@ export default function Home() {
   return (
     <div className={styles["box-container-home"]}>
       <nav className={styles["header-banner"]}>
-        <Image src={"/logo-banner.png"} width={150} height={70} alt=""/>
+        <Image src={"/logo-banner.png"} width={150} height={70} alt="" />
         <div className={styles["menu"]}>
           Menu{" "}
           <div className={styles["burger-icon"]}>
@@ -61,14 +60,30 @@ export default function Home() {
         <h1>
           LANCE TON, <TextAnimation />
         </h1>
-        <p>
+        <p style={{ fontSize: "60px", fontWeight: "200" }}>
           Caauri, c&apos;est l&apos;expertise digital complète <br />
           qu&apos;il vous faut pour surperformer !
         </p>
         <div className={styles["button"]}>
           <p style={{ marginRight: "10px" }}>Discutons</p>
           <div className={styles["rounded-circle"]}>
-            <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+            <Image src={"/Frame.png"} height={15} width={15} alt="" />
+          </div>
+        </div>
+        <div className={styles["line-box"]}></div>
+        <p className={styles["text-scroll"]}>SCROLL</p>
+        <div className={styles["social-network-logo"]}>
+          <div className={styles["logo"]}>
+            <Image src={"/facebook-logo.svg"} height={24} width={24} alt="" />
+          </div>
+          <div className={styles["logo"]}>
+            <Image src={"/twitter-logo.svg"} height={24} width={24} alt="" />
+          </div>
+          <div className={styles["logo"]}>
+            <Image src={"/instagram-logo.svg"} height={24} width={24} alt="" />
+          </div>
+          <div className={styles["logo"]}>
+            <Image src={"/linkdin-logo.svg"} height={24} width={24} alt="" />
           </div>
         </div>
       </div>
@@ -109,7 +124,7 @@ export default function Home() {
                 En savoir plus
               </p>
               <div className={styles["rounded-circle"]}>
-                <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+                <Image src={"/Frame.png"} height={15} width={15} alt="" />
               </div>
             </div>
           </div>
@@ -150,7 +165,7 @@ export default function Home() {
                 En savoir plus
               </p>
               <div className={styles["rounded-circle"]}>
-                <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+                <Image src={"/Frame.png"} height={15} width={15} alt="" />
               </div>
             </div>
           </div>
@@ -197,7 +212,7 @@ export default function Home() {
                 En savoir plus
               </p>
               <div className={styles["rounded-circle"]}>
-                <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+                <Image src={"/Frame.png"} height={15} width={15} alt="" />
               </div>
             </div>
           </div>
@@ -244,7 +259,7 @@ export default function Home() {
                 En savoir plus
               </p>
               <div className={styles["rounded-circle"]}>
-                <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+                <Image src={"/Frame.png"} height={15} width={15} alt="" />
               </div>
             </div>
           </div>
@@ -546,15 +561,39 @@ export default function Home() {
           terme.
         </p>
       </div>
+      <div className={styles["portfolio-box-container"]}>
+        <h1>Portfolio</h1>
+        <div className={styles["portfolio-box-content"]}>
+          <p>
+            Portfolio Lorem ipsum dolor sit amet consectetur. Posuere sit tortor
+            maecenas tellus sed. Luctus elit amet facilisis quam tristique.{" "}
+          </p>
+          <div
+            className={styles["button"]}
+            style={{ height: "108px", width: "30px" }}
+          >
+            <p style={{ marginRight: "10px", fontSize: "16px" }}>Portfolio</p>
+            <div className={styles["rounded-circle"]}>
+              <Image src={"/Frame.png"} height={15} width={15} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles["grid-box-container"]}>
         <div className={styles["grid-container-top"]}>
-          <div className={styles["item1"]}></div>
+          <div className={styles["item1"]}>
+            <h1>KMS EXPRESS</h1>
+            <h2>Campagne</h2>
+          </div>
           <div className={styles["item2"]}></div>
           <div className={styles["item3"]}></div>
         </div>
         <div className={styles["grid-container-bottom"]}>
           <div className={styles["item1"]}></div>
-          <div className={styles["item2"]}></div>
+          <div className={styles["item2"]}>
+            <h1>KMS EXPRESS</h1>
+            <h2>Site web</h2>
+          </div>
         </div>
       </div>
       <LogoYcombinator />
@@ -570,11 +609,20 @@ export default function Home() {
         <div className={styles["button"]}>
           <p style={{ marginRight: "10px" }}>Discutons</p>
           <div className={styles["rounded-circle"]}>
-            <Image src={"/Frame.png"} height={15} width={15} alt=""/>
+            <Image src={"/Frame.png"} height={15} width={15} alt="" />
           </div>
         </div>
       </div>
       <Footer />
+      <div className={styles["bottom-box-container"]}>
+        <div>
+          <p>© 2023 Caauri Consulting.</p>
+        </div>
+        <div style={{justifyContent: 'space-between'}}>
+          <p>Terms & Services</p>
+          <p>Privacy policy</p>
+        </div>
+      </div>
     </div>
   );
 }
